@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otp code - Email verification</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.4;
+            color: #444444;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            background-color: #f7f7f7;
+        }
+
+        table {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+            font-weight: normal;
+            color: gray;
+            padding-right: 10px;
+        }
+
+        td {
+            text-align: left;
+            padding-bottom: 10px;
+        }
+
+        strong {
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .logo {
+            display: inline-block;
+            max-width: 250px;
+            padding: 10px;
+        }
+
+        .logo img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container" style="background-color: #f2f2f2;">
+    <table>
+        <tr>
+            <td>
+                <h3>Hi <%= firstName %>,</h3>
+                <p>Your verification code to verify <%= email %> is <strong><%= code %></strong>.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <th>Device</th>
+                        <td><%= userAgent %></td>
+                    </tr>
+                    <tr>
+                        <th>When</th>
+                        <td><%= createdAt %></td>
+                    </tr>
+                    <tr>
+                        <th>Where (IP)</th>
+                        <td><%= ipAddress %></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>If this was not you, please disregard this email. Your email was entered by mistake.</strong>
+                </p>
+                <p>Thanks.<br /></p>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

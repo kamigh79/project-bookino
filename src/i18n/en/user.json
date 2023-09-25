@@ -1,0 +1,38 @@
+{
+  "update": {
+    "success": "User updated successfully.",
+    "failed": {
+      "password_confirmation": "Password confirmation not match."
+    }
+  },
+  "create": {
+    "success": "User created successfully."
+  },
+  "profile": {
+    "success": "Profile updated successfully.",
+    "create": {
+      "success": "User profile created successfully."
+    },
+    "update": {
+      "success": "User profile updated successfully."
+    },
+    "show": {
+      "success": "User profile find successfully."
+    },
+    "index": {
+      "success": "User profiles indexed successfully."
+    }
+  },
+  "change-password": {
+    "success": "Password changed successfully."
+  },
+  "show": {
+    "success": "User show successfully."
+  },
+  "index": {
+    "success": "User indexed successfully."
+  },
+  "delete": {
+    "success": "User deleted successfully."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "create": {
+    "success": "Book created successfully."
+  },
+  "show": {
+    "success": "Book show successfully."
+  },
+  "update": {
+    "success": "Book updated successfully."
+  },
+  "index": {
+    "success": "Book indexed successfully."
+  }
+}
